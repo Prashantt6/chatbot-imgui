@@ -1,0 +1,1633 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\lua"
+        - "C:\\Program Files\\LOVE"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\MinGW\\bin"
+        - "C:\\xampp\\php"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
+        - "C:\\flutter\\bin"
+        - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.14.18+a338add32 for .NET Framework
+      Build started 10/1/2025 8:50:15 AM.
+      
+      Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\4.1.0\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\4.1.0\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\4.1.0\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.03
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/4.1.0/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/"
+      - "C:/Users/ACER/Downloads/lua/"
+      - "C:/Program Files/LOVE/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/MinGW/bin/"
+      - "C:/xampp/php/"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/"
+      - "C:/flutter/bin/"
+      - "C:/Users/ACER/AppData/Roaming/npm/"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\lua"
+        - "C:\\Program Files\\LOVE"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\MinGW\\bin"
+        - "C:\\xampp\\php"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
+        - "C:\\flutter\\bin"
+        - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/"
+      - "C:/Users/ACER/Downloads/lua/"
+      - "C:/Program Files/LOVE/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/MinGW/bin/"
+      - "C:/xampp/php/"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/"
+      - "C:/flutter/bin/"
+      - "C:/Users/ACER/AppData/Roaming/npm/"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/flutter/bin/cache/dart-sdk/bin/lld-link.com"
+      - "C:/flutter/bin/cache/dart-sdk/bin/lld-link.exe"
+      - "C:/flutter/bin/cache/dart-sdk/bin/lld-link"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/lld-link.com"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/lld-link.exe"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/lld-link.com"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/lld-link.exe"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/lld-link"
+      - "C:/Users/ACER/Downloads/lua/lld-link.com"
+      - "C:/Users/ACER/Downloads/lua/lld-link.exe"
+      - "C:/Users/ACER/Downloads/lua/lld-link"
+      - "C:/Program Files/LOVE/lld-link.com"
+      - "C:/Program Files/LOVE/lld-link.exe"
+      - "C:/Program Files/LOVE/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lld-link"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/lld-link.com"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/lld-link.exe"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/lld-link"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/lld-link.com"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/lld-link.exe"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/lld-link"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/lld-link.com"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/lld-link.exe"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/lld-link"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/MinGW/bin/lld-link.com"
+      - "C:/MinGW/bin/lld-link.exe"
+      - "C:/MinGW/bin/lld-link"
+      - "C:/xampp/php/lld-link.com"
+      - "C:/xampp/php/lld-link.exe"
+      - "C:/xampp/php/lld-link"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/lld-link.com"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/lld-link.exe"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/lld-link"
+      - "C:/flutter/bin/lld-link.com"
+      - "C:/flutter/bin/lld-link.exe"
+      - "C:/flutter/bin/lld-link"
+      - "C:/Users/ACER/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/ACER/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/ACER/AppData/Roaming/npm/lld-link"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\lua"
+        - "C:\\Program Files\\LOVE"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\MinGW\\bin"
+        - "C:\\xampp\\php"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
+        - "C:\\flutter\\bin"
+        - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/"
+      - "C:/Users/ACER/Downloads/lua/"
+      - "C:/Program Files/LOVE/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/MinGW/bin/"
+      - "C:/xampp/php/"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/"
+      - "C:/flutter/bin/"
+      - "C:/Users/ACER/AppData/Roaming/npm/"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\lua"
+        - "C:\\Program Files\\LOVE"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\MinGW\\bin"
+        - "C:\\xampp\\php"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
+        - "C:\\flutter\\bin"
+        - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/"
+      - "C:/Users/ACER/Downloads/lua/"
+      - "C:/Program Files/LOVE/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/MinGW/bin/"
+      - "C:/xampp/php/"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/"
+      - "C:/flutter/bin/"
+      - "C:/Users/ACER/AppData/Roaming/npm/"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
+      - "C:/flutter/bin/cache/dart-sdk/bin/mt.com"
+      - "C:/flutter/bin/cache/dart-sdk/bin/mt.exe"
+      - "C:/flutter/bin/cache/dart-sdk/bin/mt"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/mt.com"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/mt.exe"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/mt.com"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/mt.exe"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/mt"
+      - "C:/Users/ACER/Downloads/lua/mt.com"
+      - "C:/Users/ACER/Downloads/lua/mt.exe"
+      - "C:/Users/ACER/Downloads/lua/mt"
+      - "C:/Program Files/LOVE/mt.com"
+      - "C:/Program Files/LOVE/mt.exe"
+      - "C:/Program Files/LOVE/mt"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/mt.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/mt.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/mt"
+      - "C:/Program Files/Docker/Docker/resources/bin/mt.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/mt.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt"
+      - "C:/Program Files/nodejs/mt.com"
+      - "C:/Program Files/nodejs/mt.exe"
+      - "C:/Program Files/nodejs/mt"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/mt.com"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/mt.exe"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/mt"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/mt.com"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/mt.exe"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/mt"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/mt.com"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/mt.exe"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/mt"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/MinGW/bin/mt.com"
+      - "C:/MinGW/bin/mt.exe"
+      - "C:/MinGW/bin/mt"
+      - "C:/xampp/php/mt.com"
+      - "C:/xampp/php/mt.exe"
+      - "C:/xampp/php/mt"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/mt.com"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/mt.exe"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/mt"
+      - "C:/flutter/bin/mt.com"
+      - "C:/flutter/bin/mt.exe"
+      - "C:/flutter/bin/mt"
+      - "C:/Users/ACER/AppData/Roaming/npm/mt.com"
+      - "C:/Users/ACER/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/ACER/AppData/Roaming/npm/mt"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.com"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.exe"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\lua"
+        - "C:\\Program Files\\LOVE"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\MinGW\\bin"
+        - "C:\\xampp\\php"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
+        - "C:\\flutter\\bin"
+        - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/"
+      - "C:/Users/ACER/Downloads/lua/"
+      - "C:/Program Files/LOVE/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/MinGW/bin/"
+      - "C:/xampp/php/"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/"
+      - "C:/flutter/bin/"
+      - "C:/Users/ACER/AppData/Roaming/npm/"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\lua"
+        - "C:\\Program Files\\LOVE"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\MinGW\\bin"
+        - "C:\\xampp\\php"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
+        - "C:\\flutter\\bin"
+        - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\lua"
+        - "C:\\Program Files\\LOVE"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\MinGW\\bin"
+        - "C:\\xampp\\php"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
+        - "C:\\flutter\\bin"
+        - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.14.18+a338add32 for .NET Framework
+      Build started 10/1/2025 8:50:16 AM.
+      
+      Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\4.1.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\4.1.0\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\4.1.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.00
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/4.1.0/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/"
+      - "C:/Users/ACER/Downloads/lua/"
+      - "C:/Program Files/LOVE/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/MinGW/bin/"
+      - "C:/xampp/php/"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/"
+      - "C:/flutter/bin/"
+      - "C:/Users/ACER/AppData/Roaming/npm/"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/flutter/bin/cache/dart-sdk/bin/lld-link.com"
+      - "C:/flutter/bin/cache/dart-sdk/bin/lld-link.exe"
+      - "C:/flutter/bin/cache/dart-sdk/bin/lld-link"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/lld-link.com"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/lld-link.exe"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/lld-link.com"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/lld-link.exe"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/lld-link"
+      - "C:/Users/ACER/Downloads/lua/lld-link.com"
+      - "C:/Users/ACER/Downloads/lua/lld-link.exe"
+      - "C:/Users/ACER/Downloads/lua/lld-link"
+      - "C:/Program Files/LOVE/lld-link.com"
+      - "C:/Program Files/LOVE/lld-link.exe"
+      - "C:/Program Files/LOVE/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lld-link"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/lld-link.com"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/lld-link.exe"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/lld-link"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/lld-link.com"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/lld-link.exe"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/lld-link"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/lld-link.com"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/lld-link.exe"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/lld-link"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/MinGW/bin/lld-link.com"
+      - "C:/MinGW/bin/lld-link.exe"
+      - "C:/MinGW/bin/lld-link"
+      - "C:/xampp/php/lld-link.com"
+      - "C:/xampp/php/lld-link.exe"
+      - "C:/xampp/php/lld-link"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/lld-link.com"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/lld-link.exe"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/lld-link"
+      - "C:/flutter/bin/lld-link.com"
+      - "C:/flutter/bin/lld-link.exe"
+      - "C:/flutter/bin/lld-link"
+      - "C:/Users/ACER/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/ACER/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/ACER/AppData/Roaming/npm/lld-link"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\lua"
+        - "C:\\Program Files\\LOVE"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\MinGW\\bin"
+        - "C:\\xampp\\php"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
+        - "C:\\flutter\\bin"
+        - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:574 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:547 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/"
+      - "C:/Users/ACER/Downloads/lua/"
+      - "C:/Program Files/LOVE/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/MinGW/bin/"
+      - "C:/xampp/php/"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/"
+      - "C:/flutter/bin/"
+      - "C:/Users/ACER/AppData/Roaming/npm/"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/CHATBOT_IMGUI/bin/"
+      - "C:/Program Files (x86)/CHATBOT_IMGUI/sbin/"
+      - "C:/Program Files (x86)/CHATBOT_IMGUI/"
+    searched_directories:
+      - "C:/flutter/bin/cache/dart-sdk/bin/rc.com"
+      - "C:/flutter/bin/cache/dart-sdk/bin/rc.exe"
+      - "C:/flutter/bin/cache/dart-sdk/bin/rc"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/rc.com"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/rc.exe"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/rc.com"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/rc.exe"
+      - "C:/Users/ACER/Downloads/jdk-23_windows-x64_bin/jdk-23.0.2/bin/rc"
+      - "C:/Users/ACER/Downloads/lua/rc.com"
+      - "C:/Users/ACER/Downloads/lua/rc.exe"
+      - "C:/Users/ACER/Downloads/lua/rc"
+      - "C:/Program Files/LOVE/rc.com"
+      - "C:/Program Files/LOVE/rc.exe"
+      - "C:/Program Files/LOVE/rc"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/rc.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/rc.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/rc"
+      - "C:/Program Files/Docker/Docker/resources/bin/rc.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/rc.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc"
+      - "C:/Program Files/nodejs/rc.com"
+      - "C:/Program Files/nodejs/rc.exe"
+      - "C:/Program Files/nodejs/rc"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/rc.com"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/rc.exe"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Launcher/rc"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/rc.com"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/rc.exe"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/Scripts/rc"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/rc.com"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/rc.exe"
+      - "C:/Users/ACER/AppData/Local/Programs/Python/Python311/rc"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/MinGW/bin/rc.com"
+      - "C:/MinGW/bin/rc.exe"
+      - "C:/MinGW/bin/rc"
+      - "C:/xampp/php/rc.com"
+      - "C:/xampp/php/rc.exe"
+      - "C:/xampp/php/rc"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/ACER/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/rc.com"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/rc.exe"
+      - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/rc"
+      - "C:/flutter/bin/rc.com"
+      - "C:/flutter/bin/rc.exe"
+      - "C:/flutter/bin/rc"
+      - "C:/Users/ACER/AppData/Roaming/npm/rc.com"
+      - "C:/Users/ACER/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/ACER/AppData/Roaming/npm/rc"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.com"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.exe"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files (x86)/CHATBOT_IMGUI/bin/rc.com"
+      - "C:/Program Files (x86)/CHATBOT_IMGUI/bin/rc.exe"
+      - "C:/Program Files (x86)/CHATBOT_IMGUI/bin/rc"
+      - "C:/Program Files (x86)/CHATBOT_IMGUI/sbin/rc.com"
+      - "C:/Program Files (x86)/CHATBOT_IMGUI/sbin/rc.exe"
+      - "C:/Program Files (x86)/CHATBOT_IMGUI/sbin/rc"
+      - "C:/Program Files (x86)/CHATBOT_IMGUI/rc.com"
+      - "C:/Program Files (x86)/CHATBOT_IMGUI/rc.exe"
+      - "C:/Program Files (x86)/CHATBOT_IMGUI/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\jdk-23_windows-x64_bin\\jdk-23.0.2\\bin"
+        - "C:\\Users\\ACER\\Downloads\\lua"
+        - "C:\\Program Files\\LOVE"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\MinGW\\bin"
+        - "C:\\xampp\\php"
+        - "C:\\Users\\ACER\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
+        - "C:\\flutter\\bin"
+        - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/CHATBOT_IMGUI"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/CHATBOT_IMGUI"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-5ahqd0"
+      binary: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-5ahqd0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-5ahqd0'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_22870.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.18+a338add32 for .NET Framework
+        Build started 10/1/2025 8:50:18 AM.
+        
+        Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5ahqd0\\cmTC_22870.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_22870.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5ahqd0\\Debug\\".
+          Creating directory "cmTC_22870.dir\\Debug\\cmTC_22870.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_22870.dir\\Debug\\cmTC_22870.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_22870.dir\\Debug\\cmTC_22870.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_22870.dir\\Debug\\\\" /Fd"cmTC_22870.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35214 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_22870.dir\\Debug\\\\" /Fd"cmTC_22870.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5ahqd0\\Debug\\cmTC_22870.exe" /INCREMENTAL /ILK:"cmTC_22870.dir\\Debug\\cmTC_22870.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-5ahqd0/Debug/cmTC_22870.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-5ahqd0/Debug/cmTC_22870.lib" /MACHINE:X64  /machine:x64 cmTC_22870.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_22870.vcxproj -> C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5ahqd0\\Debug\\cmTC_22870.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_22870.dir\\Debug\\cmTC_22870.tlog\\unsuccessfulbuild".
+          Touching "cmTC_22870.dir\\Debug\\cmTC_22870.tlog\\cmTC_22870.lastbuildstate".
+        Done Building Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5ahqd0\\cmTC_22870.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.03
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35214.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-fokgat"
+      binary: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-fokgat"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-fokgat'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b3788.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.18+a338add32 for .NET Framework
+        Build started 10/1/2025 8:50:19 AM.
+        
+        Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fokgat\\cmTC_b3788.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_b3788.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fokgat\\Debug\\".
+          Creating directory "cmTC_b3788.dir\\Debug\\cmTC_b3788.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_b3788.dir\\Debug\\cmTC_b3788.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_b3788.dir\\Debug\\cmTC_b3788.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_b3788.dir\\Debug\\\\" /Fd"cmTC_b3788.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35214 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_b3788.dir\\Debug\\\\" /Fd"cmTC_b3788.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fokgat\\Debug\\cmTC_b3788.exe" /INCREMENTAL /ILK:"cmTC_b3788.dir\\Debug\\cmTC_b3788.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-fokgat/Debug/cmTC_b3788.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-fokgat/Debug/cmTC_b3788.lib" /MACHINE:X64  /machine:x64 cmTC_b3788.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_b3788.vcxproj -> C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fokgat\\Debug\\cmTC_b3788.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_b3788.dir\\Debug\\cmTC_b3788.tlog\\unsuccessfulbuild".
+          Touching "cmTC_b3788.dir\\Debug\\cmTC_b3788.tlog\\cmTC_b3788.lastbuildstate".
+        Done Building Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fokgat\\cmTC_b3788.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.07
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35214.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "libs/glfw/CMakeLists.txt:52 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-qpm0qx"
+      binary: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-qpm0qx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/libs/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-qpm0qx'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7d4d6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.18+a338add32 for .NET Framework
+        Build started 10/1/2025 8:50:21 AM.
+        
+        Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qpm0qx\\cmTC_7d4d6.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_7d4d6.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qpm0qx\\Debug\\".
+          Creating directory "cmTC_7d4d6.dir\\Debug\\cmTC_7d4d6.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_7d4d6.dir\\Debug\\cmTC_7d4d6.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_7d4d6.dir\\Debug\\cmTC_7d4d6.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_7d4d6.dir\\Debug\\\\" /Fd"cmTC_7d4d6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qpm0qx\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35214 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_7d4d6.dir\\Debug\\\\" /Fd"cmTC_7d4d6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qpm0qx\\src.c"
+          src.c
+        C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qpm0qx\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qpm0qx\\cmTC_7d4d6.vcxproj]
+        Done Building Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qpm0qx\\cmTC_7d4d6.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qpm0qx\\cmTC_7d4d6.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qpm0qx\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qpm0qx\\cmTC_7d4d6.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.67
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "libs/glfw/CMakeLists.txt:52 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-okbtql"
+      binary: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-okbtql"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/libs/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-okbtql'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_20245.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.18+a338add32 for .NET Framework
+        Build started 10/1/2025 8:50:22 AM.
+        
+        Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-okbtql\\cmTC_20245.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_20245.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-okbtql\\Debug\\".
+          Creating directory "cmTC_20245.dir\\Debug\\cmTC_20245.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_20245.dir\\Debug\\cmTC_20245.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_20245.dir\\Debug\\cmTC_20245.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_20245.dir\\Debug\\\\" /Fd"cmTC_20245.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-okbtql\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35214 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_20245.dir\\Debug\\\\" /Fd"cmTC_20245.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-okbtql\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-okbtql\\Debug\\cmTC_20245.exe" /INCREMENTAL /ILK:"cmTC_20245.dir\\Debug\\cmTC_20245.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-okbtql/Debug/cmTC_20245.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-okbtql/Debug/cmTC_20245.lib" /MACHINE:X64  /machine:x64 cmTC_20245.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-okbtql\\cmTC_20245.vcxproj]
+        Done Building Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-okbtql\\cmTC_20245.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-okbtql\\cmTC_20245.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-okbtql\\cmTC_20245.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.84
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "libs/glfw/CMakeLists.txt:52 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-npnnoy"
+      binary: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-npnnoy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/libs/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-npnnoy'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e71e1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.18+a338add32 for .NET Framework
+        Build started 10/1/2025 8:50:24 AM.
+        
+        Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-npnnoy\\cmTC_e71e1.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_e71e1.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-npnnoy\\Debug\\".
+          Creating directory "cmTC_e71e1.dir\\Debug\\cmTC_e71e1.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_e71e1.dir\\Debug\\cmTC_e71e1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_e71e1.dir\\Debug\\cmTC_e71e1.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_e71e1.dir\\Debug\\\\" /Fd"cmTC_e71e1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-npnnoy\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35214 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_e71e1.dir\\Debug\\\\" /Fd"cmTC_e71e1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-npnnoy\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-npnnoy\\Debug\\cmTC_e71e1.exe" /INCREMENTAL /ILK:"cmTC_e71e1.dir\\Debug\\cmTC_e71e1.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-npnnoy/Debug/cmTC_e71e1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-npnnoy/Debug/cmTC_e71e1.lib" /MACHINE:X64  /machine:x64 cmTC_e71e1.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-npnnoy\\cmTC_e71e1.vcxproj]
+        Done Building Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-npnnoy\\cmTC_e71e1.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-npnnoy\\cmTC_e71e1.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-npnnoy\\cmTC_e71e1.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.76
+        
+      exitCode: 1
+...

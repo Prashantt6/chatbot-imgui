@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/cmake_install.cmake",
+		"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/libs/glfw/cmake_install.cmake",
+		"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/libs/glfw/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ACER\OneDrive\Desktop\Chatbot-imgui\build\CMakeFiles\fd429defd738c8e6fb054cf9e3d2ede6\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ACER\OneDrive\Desktop\Chatbot-imgui\libs\glfw\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\ACER\OneDrive\Desktop\Chatbot-imgui\libs\glfw\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\ACER\OneDrive\Desktop\Chatbot-imgui\libs\glfw\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\ACER\OneDrive\Desktop\Chatbot-imgui\build\libs\glfw\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{86BE48BB-F794-3F1D-B5BD-BF3B8D6650DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{00FEA2F8-5490-35E7-A029-39465BECE22E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

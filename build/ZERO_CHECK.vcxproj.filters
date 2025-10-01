@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ACER\OneDrive\Desktop\Chatbot-imgui\build\CMakeFiles\1f5b9a541489f242afa437588ed5b8b8\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{86BE48BB-F794-3F1D-B5BD-BF3B8D6650DD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

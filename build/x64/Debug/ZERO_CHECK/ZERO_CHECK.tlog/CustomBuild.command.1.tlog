@@ -1,0 +1,10 @@
+^C:\USERS\ACER\ONEDRIVE\DESKTOP\CHATBOT-IMGUI\BUILD\CMAKEFILES\1F5B9A541489F242AFA437588ED5B8B8\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ACER/OneDrive/Desktop/Chatbot-imgui -BC:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CHATBOT_IMGUI.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,8 @@
+C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/glad.dir
+C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/imgui_lib.dir
+C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CHATBOT_IMGUI.dir
+C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/libs/glfw/CMakeFiles/ALL_BUILD.dir
+C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/libs/glfw/src/CMakeFiles/glfw.dir
+C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/libs/glfw/src/CMakeFiles/update_mappings.dir
