@@ -81,6 +81,7 @@ int main() {
 
         static bool show_chats_history = false;
         static bool history = false ;
+        static bool send = true;
 
         loadchatsfromfile("data/chats.txt");
 
@@ -117,6 +118,39 @@ int main() {
              }
 
             ImGui::EndChild();
+
+
+
+
+
+
+            ImGui::BeginChild("chat", ImVec2(400, 100), true, ImGuiWindowFlags_AlwaysHorizontalScrollbar);
+
+            static char bigText[1024] = "";
+
+            
+            float availWidth = ImGui::GetContentRegionAvail().x;
+
+            
+            ImVec2 buttonSize(60, 80); 
+
+            
+            ImGui::InputTextMultiline(
+                "##chatInput", 
+                bigText, 
+                IM_ARRAYSIZE(bigText), 
+                ImVec2(availWidth - buttonSize.x - ImGui::GetStyle().ItemSpacing.x, buttonSize.y)
+            );
+
+            
+            ImGui::SameLine();
+
+            if (ImGui::Button("Send", buttonSize)) {
+                send == true;
+            }
+
+            ImGui::EndChild();
+
             ImGui::End();
         }
 
