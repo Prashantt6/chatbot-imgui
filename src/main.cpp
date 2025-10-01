@@ -79,19 +79,42 @@ int main() {
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
+        static bool show_chats_history = false;
+        static bool history = false ;
+
         loadchatsfromfile("data/chats.txt");
 
         // Chat window
         if (show_chat_window) {
             ImGui::Begin("Chatbot", &show_chat_window);
+            
             ImGui::BeginChild("Chats", ImVec2(400, 300), true, ImGuiWindowFlags_HorizontalScrollbar);
             // ImGui::Text("Hello! This is your chatbot window.");
+            if(!history){
+                if (ImGui::Button("History")) {
+                    show_chats_history = true;
+                    history = true;
+                }
+            }
+            else {
+                if(ImGui::Button("Back")){
+                    show_chats_history = false ;
+                    history = false;
+                }
+            }
+
+            ImGui::SameLine();
             ImGui::SetCursorPosX((ImGui::GetContentRegionAvail().x - ImGui::CalcTextSize("Chats").x) * 0.5f);
             ImGui::Text("Chats");
             
-            for(auto& chats : chattexts){
+           
+            if(show_chats_history){
+                ImGui::BeginChild("History " , ImVec2(200,300), true , ImGuiWindowFlags_HorizontalScrollbar);
+                for(auto& chats : chattexts){
                 ImGui::TextUnformatted(chats.c_str());
-            }
+                }
+                ImGui::EndChild();
+             }
 
             ImGui::EndChild();
             ImGui::End();
