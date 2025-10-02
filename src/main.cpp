@@ -22,10 +22,25 @@ void loadchatsfromfile(const std::string& chats){
     chattexts.clear();
     std::string line ;
     
+    
     while(std::getline (file , line )){
         chattexts.push_back(line);
     }
     file.close();
+    
+}
+void Savechats(const char* chats){
+    std::ofstream chat("data/chats_history.txt" , std::ios::app);
+
+    if(chat.is_open()){
+        chat << chats << "\n";
+        chat.close();
+
+        
+    }
+    else {
+        std::cerr<<"Chats not uploaded";
+    }
     
 }
 
@@ -83,7 +98,7 @@ int main() {
         static bool history = false ;
         static bool send = true;
 
-        loadchatsfromfile("data/chats.txt");
+        loadchatsfromfile("data/chats_history.txt");
 
         // Chat window
         if (show_chat_window) {
@@ -146,7 +161,12 @@ int main() {
             ImGui::SameLine();
 
             if (ImGui::Button("Send", buttonSize)) {
-                send == true;
+                if(strlen(bigText)> 0){
+                    Savechats(bigText);
+                    
+                    bigText[0] = '\0';
+                }
+
             }
 
             ImGui::EndChild();
