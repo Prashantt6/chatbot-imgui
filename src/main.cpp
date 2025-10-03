@@ -96,18 +96,21 @@ int main() {
 
         static bool show_chats_history = false;
         static bool history = false ;
-        static bool send = true;
+        static bool send = false;
+        static std::vector<std::string> chat_message ;
 
-        loadchatsfromfile("data/chats_history.txt");
+
+        
 
         // Chat window
         if (show_chat_window) {
             ImGui::Begin("Chatbot", &show_chat_window);
             
-            ImGui::BeginChild("Chats", ImVec2(400, 300), true, ImGuiWindowFlags_HorizontalScrollbar);
+            ImGui::BeginChild("Chats", ImVec2(430, 400), true);
             // ImGui::Text("Hello! This is your chatbot window.");
             if(!history){
                 if (ImGui::Button("History")) {
+                    loadchatsfromfile("data/chats_history.txt");
                     show_chats_history = true;
                     history = true;
                 }
@@ -125,21 +128,42 @@ int main() {
             
            
             if(show_chats_history){
-                ImGui::BeginChild("History " , ImVec2(200,300), true , ImGuiWindowFlags_HorizontalScrollbar);
+                ImGui::BeginChild("History " , ImVec2(200,500), true );
                 for(auto& chats : chattexts){
                 ImGui::TextUnformatted(chats.c_str());
                 }
                 ImGui::EndChild();
              }
 
+            ImGui::BeginChild(" ", ImVec2(0,360), true , ImGuiWindowFlags_AlwaysHorizontalScrollbar);
+            if(send){
+                // send = false ;
+            for (auto& msg : chat_message) {
+                bool isUserMessage = msg.find("You:") == 0; 
+
+                if (isUserMessage) {
+                    
+                    ImGui::SetCursorPosX(
+                        ImGui::GetWindowWidth() - ImGui::CalcTextSize(msg.c_str()).x - 20
+                    );
+                    ImGui::TextColored(ImVec4(0.2f, 0.6f, 1.0f, 1.0f), "%s", msg.c_str());
+                } 
+                else {
+                    
+                    ImGui::TextColored(ImVec4(0.2f, 1.0f, 0.3f, 1.0f), "%s", msg.c_str());
+                    }
+            }
+
+                ImGui::SetScrollHereY(1.0f);
+            }
+            ImGui::EndChild();
+            
+
             ImGui::EndChild();
 
 
 
-
-
-
-            ImGui::BeginChild("chat", ImVec2(400, 100), true, ImGuiWindowFlags_AlwaysHorizontalScrollbar);
+            ImGui::BeginChild("chat", ImVec2(430, 100), true);
 
             static char bigText[1024] = "";
 
@@ -161,10 +185,13 @@ int main() {
             ImGui::SameLine();
 
             if (ImGui::Button("Send", buttonSize)) {
+                
                 if(strlen(bigText)> 0){
+                    std::string  userMsg = "You: " + std::string(bigText);
+                    chat_message.push_back(userMsg);
                     Savechats(bigText);
-                    
                     bigText[0] = '\0';
+                    send = true;
                 }
 
             }
