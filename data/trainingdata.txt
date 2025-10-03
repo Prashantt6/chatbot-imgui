@@ -1,0 +1,20 @@
+hi|hello! how are you?
+hello|hi there! nice to meet you
+hey|hey! what’s up?
+good morning|Good morning! Hope you have a great day ahead.
+good night|Sweet dreams, sleep well!
+how are you?|I’m doing well, thanks for asking. How about you?
+what is your name?|I am your chatbot friend.
+who created you?|I was built by Prashant.
+bye|Goodbye! Have a great day.
+see you later|See you soon!
+thank you|You’re welcome!
+thanks|No problem, happy to help!
+tell me a joke|Why don’t programmers like nature? Too many bugs!
+what is ai?|AI means Artificial Intelligence. It helps machines learn and think.
+what is machine learning?|Machine Learning is a field of AI where systems learn from data.
+what is deep learning?|Deep Learning is a type of Machine Learning using neural networks.
+what is c++?|C++ is a programming language, widely used for system and application development.
+what is python?|Python is a high-level programming language, popular for AI and data science.
+who is messi?|Messi is the best football player in the world! ⚽
+who is ronaldo?|Ronaldo is also a great footballer, but Messi is the 🐐.
