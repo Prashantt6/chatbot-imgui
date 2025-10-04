@@ -38,6 +38,52 @@ std::vector<response:: QA> response::load_training_data(const std::string &train
     return training_set;
 }
 
+std::vector<std::string> response :: tokenizer (const std::string &sentence){
+    std::istringstream iss(sentence);
+    std::string temp;
+    std::vector<std::string> tokens;
+
+    while (iss >> temp) {
+        for (char& c : temp) { c = std::tolower(c); } // convert to lowercase
+        if (!temp.empty()) {
+            tokens.push_back(temp);
+        }
+    }
+    return tokens;
+}
+
+
+std::vector<std::string> response :: preprocessing (const std::string &sentence)
+{
+    std::vector<std::string> words = tokenizer(sentence);
+    std::vector<std::string> result;
+
+    for (const auto& word : words) {
+        if (stopwords.find(word) == stopwords.end()) {
+            
+            result.push_back(word);
+        }
+    }
+    return result;
+}
+
+void response :: makepair(const std::vector<response :: QA>& training_set){
+    
+    for(auto& data : training_set){
+        std::vector<std::string> words = preprocessing(data.input);
+        for( int i = 0 ; i< words.size() ; i++ ){
+            std::string target = words[i];
+            int left = std::max(0 , i - window);
+            int right = std::min((int)words.size() - 1 , i + window);
+            for( int j = left ; j <= right ; j++){
+                if (i == j) continue;
+                training_pairs.push_back({target , words[j]});
+            }
+         }
+    }
+}
+
+
 void response :: training(){
     std::vector<QA> training_set = load_training_data("trainingdata.txt");
     
@@ -68,6 +114,6 @@ void response :: training(){
         }
     }
     }
-    // makepair(training_set);
+    makepair(training_set);
 
 }

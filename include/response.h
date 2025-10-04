@@ -52,7 +52,7 @@ class response {
 
     public: 
         void training();
-        void makepair(const std::vector<std::string>& training_set);
+        void makepair(const std::vector<QA>& training_set);
         std::vector<std::vector<float>> forward_pass(int V , int D ,std::vector<std::vector<float>>& W1 , std::vector<std::vector<float>>& W2 );
         
         void backward_pass(std::vector<float>& h ,std::vector<std::vector<float>>& W1, std::vector<std::vector<float>>& W2 , std::string& target , std::string& context );
