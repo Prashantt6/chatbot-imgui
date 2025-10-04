@@ -9,7 +9,6 @@
 #include <iterator>
 #include <fstream>
 #include <random>
-#include <cmath>
 #include <map>
 #include "response.h"
 
@@ -99,21 +98,141 @@ void response :: training(){
     // Step 2: Convert vocabulary (set) to a list for indexing
     vocablist.assign(vocabulary.begin(), vocabulary.end());
 
-    for(auto& data : training_set){
-        std::vector<std::string> words = preprocessing(data.input);
-        
-        for(auto &word : words ){
-            if(wordsvec.find(word) == wordsvec.end()){
-                std::vector<float>temp_vec(vocablist.size() , 0);
-                auto it = std::find(vocablist.begin() , vocablist.end() , word );
-                if( it != vocablist.end()){
-                    int index = std::distance(vocablist.begin() , it);
-                    temp_vec[index] = 1;
-                }
-                wordsvec[word] = temp_vec;
+    // Build lookup maps and one-hot vectors
+    for(int i = 0 ; i < vocablist.size() ; i++){
+        word_to_id[vocablist[i]] = i;
+        std::vector<float> temp_vec(vocablist.size(), 0);
+        temp_vec[i] = 1;
+        onehot[vocablist[i]] = temp_vec;
+    }
+
+    makepair(training_set);
+
+}
+
+std::vector<std::vector<float>> initialize_matrix( int rows , int columns) {
+    std::vector<std::vector<float>> mat(rows , std::vector<float>(columns));
+    float limit = 1.0 / std::sqrt(columns);
+
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_real_distribution<float> dist(-limit , limit);
+
+    for(int i = 0 ; i< rows ; i++){
+        for( int j = 0 ; j < columns ; j++){
+            mat[i][j] = dist(gen);
         }
     }
+    return mat;
+}
+
+int word_id(std::unordered_map<std::string,int>& word_to_id ,std::string& target){
+    auto it = word_to_id.find(target);
+    if(it != word_to_id.end()) return it->second;
+    return -1;
+}
+
+std::vector<float> multiply (const std::vector<float>& h , const std::vector<std::vector<float>>& W2 ){
+    int V = W2[0].size();
+    int D = W2.size();
+    std::vector<float> u(V , 0.0);
+    for(int i = 0 ; i< V ; i++){
+        for( int j = 0 ; j< D  ; j++){
+            u[i] +=   h[j] * W2[j][i]; //taking W2 as a flat vector
+        }
     }
-    makepair(training_set);
+    return u;
+}
+
+std::vector<std::vector<float>> response :: forward_pass(int V , int D , std::vector<std::vector<float>>& W1 , std::vector<std::vector<float>>& W2){
+
+        for(int epoch = 0 ; epoch <1000 ; epoch++){
+            total_loss = 0.0;
+            for(auto& word : training_pairs){
+                
+                std::string target = word.first;
+                std::string context = word.second;
+                int wordindex = word_id(word_to_id , target);
+                if(wordindex == -1) continue;
+                auto h = W1[wordindex];
+                auto u = multiply(h , W2 );
+                expo.clear();
+                float sum = 0;
+                float max_u = *std::max_element(u.begin() , u.end());
+                for(int i = 0 ; i < V ; i++){
+                    float ex = exp(u[i] - max_u);
+                    expo.push_back(ex);
+                    sum += ex;
+                }
+                prob.clear();
+                for(int i = 0 ; i < V ; i++){
+                    float p = expo[i]/ sum;
+                    prob.push_back(p);
+                }
+
+                // Calculating loss 
+                
+                int context_index = word_id(word_to_id , context);
+                if(context_index == -1) continue;
+                float loss = -log(prob[context_index] + 1e-10);
+                total_loss += loss ;
+                
+                // Backward pass 
+                backward_pass(h , W1 , W2 , target , context);
+                
+                
+            }
+            // Loss for each epoch
+            // std::cout << "Epoch " << epoch  << " - Avg Loss: " << total_loss / training_pairs.size()  << std::endl;  
+        } 
+
+        return W1;
+        
+
+    
+}
+
+void response :: backward_pass(std::vector<float>& h ,std::vector<std::vector<float>>& W1 , std::vector<std::vector<float>>& W2, std::string& target , std::string& context){
+    int D = h.size();
+    int V = prob.size();
+    std::vector<float>error(V , 0.0   ) ;
+    std::vector<float> tempvec = onehot[context];
+    for(int i = 0 ; i < prob.size() ; i++){
+        error[i] = prob[i] - tempvec[i];
+    }
+    
+
+    // Gradient for W2
+    std::vector<std::vector<float>>del_W2(D , std::vector<float>(V , 0.0));
+    for( int i = 0 ; i < D ; i++){
+        for(int j = 0 ; j < V ; j++){
+            del_W2[i][j] = h[i] * error[j];
+            W2[i][j] -= lr * del_W2[i][j];
+        }
+    }
+
+    // Gradient for W1
+    std::vector<float>del_h(D , 0.0);
+
+    for(int i = 0 ; i< D ; i++){
+        for(int j = 0 ; j< V ; j++){
+            del_h[i] += error[j] * W2[i][j];
+
+        }
+       
+    }
+    for (auto &val : del_h) {
+        if (val > 5.0) val = 5.0;
+        if (val < -5.0) val = -5.0;
+    }
+
+    int target_index = word_id(word_to_id , target);
+    if(target_index != -1 ){
+        for(int i = 0 ; i < D ; i++){
+            W1[target_index][i] -= lr * del_h[i];
+        }
+    }
+
+
 
 }
