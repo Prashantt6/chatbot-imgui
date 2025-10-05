@@ -18,4 +18,4 @@ what is c++?|C++ is a programming language, widely used for system and applicati
 what is python?|Python is a high-level programming language, popular for AI and data science.
 who is messi?|Messi is the best football player in the world! ⚽
 who is ronaldo?|Ronaldo is also a great footballer, but Messi is the 🐐.
-who is aakash? |Aakash is a gay child who goons over minor girls .
+
