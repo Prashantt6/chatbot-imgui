@@ -4,6 +4,9 @@
     <ClCompile Include="C:\Users\ACER\OneDrive\Desktop\Chatbot-imgui\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\ACER\OneDrive\Desktop\Chatbot-imgui\src\response.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\ACER\OneDrive\Desktop\Chatbot-imgui\CMakeLists.txt" />

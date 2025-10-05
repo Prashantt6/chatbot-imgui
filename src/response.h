@@ -35,7 +35,7 @@ class response {
 
         int embedding_size = 10;
 
-        double lr = 0.001;
+        float lr = 0.001f;
 
         float total_loss;
 
@@ -44,8 +44,6 @@ class response {
         std::vector<float>prob;
 
         std::vector<std::pair<std::string , std::string >> training_pairs;
-
-        std::unordered_map<std::string , std::string> response ;
 
 
         std::unordered_map<std::string, std::vector<float>> wordsvec;

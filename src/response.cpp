@@ -73,9 +73,9 @@ void response :: makepair(const std::vector<response :: QA>& training_set){
         std::vector<std::string> words = preprocessing(data.input);
         for( int i = 0 ; i< words.size() ; i++ ){
             std::string target = words[i];
-            int left = std::max(0 , i - window);
-            int right = std::min((int)words.size() - 1 , i + window);
-            for( int j = left ; j <= right ; j++){
+            size_t left = (i > window) ? i - window : 0;
+            size_t right = std::min(words.size() - 1, static_cast<size_t>(i + window));
+            for( size_t j = left ; j <= right ; ++j){
                 if (i == j) continue;
                 training_pairs.push_back({target , words[j]});
             }
@@ -85,7 +85,7 @@ void response :: makepair(const std::vector<response :: QA>& training_set){
 
 
 void response :: training(){
-    std::vector<QA> training_set = load_training_data("trainingdata.txt");
+    std::vector<QA> training_set = load_training_data("data/trainingdata.txt");
     
 
     // Step 1: Build vocabulary from all training sentences
@@ -123,7 +123,8 @@ void response :: training(){
 
 std::vector<std::vector<float>> initialize_matrix( int rows , int columns) {
     std::vector<std::vector<float>> mat(rows , std::vector<float>(columns));
-    float limit = 1.0 / std::sqrt(columns);
+    float limit = 1.0f / std::sqrt(static_cast<float>(columns));
+
 
     std::random_device rd;
     std::mt19937 gen(rd());
@@ -137,16 +138,18 @@ std::vector<std::vector<float>> initialize_matrix( int rows , int columns) {
     return mat;
 }
 
-int word_id(std::vector<std::string>& vocablist ,std::string& target){
+int word_id(const std::vector<std::string>& vocablist, const std::string& target) {
     auto it = std::find(vocablist.begin(), vocablist.end(), target);
-    return (it != vocablist.end()) ? std::distance(vocablist.begin(), it) : -1;
+    if (it == vocablist.end()) return -1;
+    return static_cast<int>(std::distance(vocablist.begin(), it));
 }
 
+
 std::vector<float> multiply (const std::vector<float>& h , const std::vector<std::vector<float>>& W2 ){
-    int V = W2[0].size();
-    int D = W2.size();
+    size_t V = W2[0].size();
+    size_t D = W2.size();
     std::vector<float> u(V , 0.0);
-    for(int i = 0 ; i< V ; i++){
+    for (size_t i = 0; i < V; ++i){
         for( int j = 0 ; j< D  ; j++){
             u[i] +=   h[j] * W2[j][i]; //taking W2 as a flat vector
         }
@@ -157,24 +160,24 @@ std::vector<float> multiply (const std::vector<float>& h , const std::vector<std
 std::vector<std::vector<float>> response :: forward_pass(int V , int D , std::vector<std::vector<float>>& W1 , std::vector<std::vector<float>>& W2){
 
         for(int epoch = 0 ; epoch <1000 ; epoch++){
-            total_loss = 0.0;
+            total_loss = 0.0f   ;
             for(auto& word : training_pairs){
                 
                 std::string target = word.first;
                 std::string context = word.second;
-                int wordindex = word_id(vocablist , target);
-                auto h = W1[wordindex];
+                size_t wordindex = static_cast<size_t>(word_id(vocablist, target));
+                auto& h = W1[wordindex];
                 auto u = multiply(h , W2 );
                 expo.clear();
                 float sum = 0;
                 float max_u = *std::max_element(u.begin() , u.end());
-                for(int i = 0 ; i < V ; i++){
-                    float ex = exp(u[i] - max_u);
+                for(size_t i = 0 ; i < V ; ++i){
+                    float ex = static_cast<float>(std:: exp(u[i] - max_u));
                     expo.push_back(ex);
                     sum += ex;
                 }
                 prob.clear();
-                for(int i = 0 ; i < V ; i++){
+                for(size_t i = 0 ; i < V ; ++i){
                     float p = expo[i]/ sum;
                     prob.push_back(p);
                 }
@@ -182,7 +185,7 @@ std::vector<std::vector<float>> response :: forward_pass(int V , int D , std::ve
                 // Calculating loss 
                 
                 int context_index = word_id(vocablist , context);
-                float loss = -log(prob[context_index] + 1e-10);
+                float loss = static_cast<float>(-log(prob[context_index] + 1e-10));
                 total_loss += loss ;
                 
                 // Backward pass 
@@ -201,8 +204,8 @@ std::vector<std::vector<float>> response :: forward_pass(int V , int D , std::ve
 }
 
 void response :: backward_pass(std::vector<float>& h ,std::vector<std::vector<float>>& W1 , std::vector<std::vector<float>>& W2, std::string& target , std::string& context){
-    int D = h.size();
-    int V = prob.size();
+    size_t D = h.size();
+    size_t V = prob.size();
     std::vector<float>error(V , 0.0   ) ;
     std::vector<float> tempvec = one_hot[context];
     for(int i = 0 ; i < prob.size() ; i++){
@@ -212,18 +215,19 @@ void response :: backward_pass(std::vector<float>& h ,std::vector<std::vector<fl
 
     // Gradient for W2
     std::vector<std::vector<float>>del_W2(D , std::vector<float>(V , 0.0));
-    for( int i = 0 ; i < D ; i++){
-        for(int j = 0 ; j < V ; j++){
+    for( size_t i = 0 ; i < D ; ++i){
+        for(size_t j = 0 ; j < V ; ++j){
             del_W2[i][j] = h[i] * error[j];
-            W2[i][j] -= lr * del_W2[i][j];
+            W2[i][j] -= static_cast<float>(lr * del_W2[i][j]);
+
         }
     }
 
     // Gradient for W1
     std::vector<float>del_h(D , 0.0);
 
-    for(int i = 0 ; i< D ; i++){
-        for(int j = 0 ; j< V ; j++){
+    for(size_t i = 0 ; i< D ; ++i){
+        for(size_t j = 0 ; j< V ; ++j){
             del_h[i] += error[j] * W2[i][j];
 
         }
@@ -247,8 +251,8 @@ void response :: backward_pass(std::vector<float>& h ,std::vector<std::vector<fl
 
 
 void response :: prediction( ){
-    int V = vocablist.size();
-    int D = embedding_size;
+    size_t V = vocablist.size();
+    size_t  D = embedding_size;
     auto W1 = initialize_matrix(V , D);
     auto W2 = initialize_matrix(D , V );
     
@@ -261,7 +265,7 @@ void response :: prediction( ){
 }
 
 std::string response :: get_response(const std::string& user_input){
-    prediction();
+    
     std::vector<std::string> words = preprocessing(user_input);
     int count = 0;
 
@@ -281,9 +285,9 @@ std::string response :: get_response(const std::string& user_input){
         }
     }
     
-    float best_sim = -1 ;
+    float best_sim = -1.0 ;
     std::string response = "I didnt understand it ";
-    std::vector<response :: QA> training_data = load_training_data("trainingdata.txt");
+    std::vector<response :: QA> training_data = load_training_data("data/trainingdata.txt");
     for(auto& qa : training_data ){
         std::vector<std::string> train_word = preprocessing(qa.input);
         int n = 0;
@@ -308,7 +312,7 @@ std::string response :: get_response(const std::string& user_input){
             a += input_vec[i] * input_vec[i];
             b += train_input[i] * train_input[i];
         }
-        float sim = dot/(std::sqrt(a) * std::sqrt(b));
+        float sim = dot/(std::sqrt(a) * std::sqrt(b) + 1e-10f);
 
         if(sim > best_sim ){
             best_sim = sim ;

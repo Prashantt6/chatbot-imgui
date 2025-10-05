@@ -361,6 +361,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\ACER\OneDrive\Desktop\Chatbot-imgui\src\main.cpp" />
+    <ClCompile Include="C:\Users\ACER\OneDrive\Desktop\Chatbot-imgui\src\response.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
