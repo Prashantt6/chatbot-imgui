@@ -10,6 +10,8 @@
 #include <GLFW/glfw3.h>
 #include <glad/glad.h>
 
+#include "response.h"
+
 
 bool show_chat_window = true;
 
@@ -97,6 +99,7 @@ int main() {
         static bool show_chats_history = false;
         static bool history = false ;
         static bool send = false;
+        static bool response = false;
         static std::vector<std::string> chat_message ;
 
 
@@ -105,6 +108,8 @@ int main() {
         // Chat window
         if (show_chat_window) {
             ImGui::Begin("Chatbot", &show_chat_window);
+
+
             
             ImGui::BeginChild("Chats", ImVec2(430, 400), true);
             // ImGui::Text("Hello! This is your chatbot window.");
@@ -192,7 +197,9 @@ int main() {
                     Savechats(bigText);
                     bigText[0] = '\0';
                     send = true;
+                    std::string response = "bot: " + 
                 }
+
 
             }
 

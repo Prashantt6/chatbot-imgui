@@ -36,7 +36,7 @@ target_include_directories(imgui_lib PUBLIC
 )
 
 # Main executable
-add_executable(CHATBOT_IMGUI src/main.cpp)
+add_executable(CHATBOT_IMGUI src/main.cpp response.cpp)
 
 # Include directories for the main target
 target_include_directories(CHATBOT_IMGUI PRIVATE
