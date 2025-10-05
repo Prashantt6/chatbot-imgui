@@ -29,9 +29,8 @@ ipch
 ## Getting files created in JSON/Schemas/Catalog/ from a VS2022 update
 JSON/
 
-## Commonly used CMake directories & CMake CPM cache
+## Commonly used CMake directories
 build*/
-.cache
 
 ## Xcode & macOS artifacts
 project.xcworkspace
@@ -68,7 +67,6 @@ examples/example_sdl2_opengl2/example_sdl2_opengl2
 examples/example_sdl2_opengl3/example_sdl2_opengl3
 examples/example_sdl2_sdlrenderer2/example_sdl2_sdlrenderer2
 examples/example_sdl2_vulkan/example_sdl2_vulkan
-examples/example_sdl3_metal/example_sdl3_metal
 examples/example_sdl3_opengl3/example_sdl3_opengl3
 examples/example_sdl3_sdlgpu3/example_sdl3_sdlgpu3
 examples/example_sdl3_sdlrenderer3/example_sdl3_sdlrenderer3

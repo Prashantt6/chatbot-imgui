@@ -23,7 +23,6 @@ video tutorials.
  - Denis Bernard
  - BiBi
  - Doug Binks
- - bitb4ker
  - blanco
  - Waris Boonyasiriwat
  - Kyle Brenneman
@@ -56,7 +55,6 @@ video tutorials.
  - Jason Daly
  - danhambleton
  - Jarrod Davis
- - decce
  - Olivier Delannoy
  - Paul R. Deppe
  - Michael Dickens
@@ -70,7 +68,6 @@ video tutorials.
  - Jan Ekström
  - Siavash Eliasi
  - er-azh
- - Jan Hendrik Farr
  - Ahmad Fatoum
  - Nikita Fediuchin
  - Felipe Ferreira
@@ -124,7 +121,6 @@ video tutorials.
  - Josh Kilmer
  - Byunghoon Kim
  - Cameron King
- - knokko
  - Peter Knut
  - Christoph Kubisch
  - Yuri Kunde Schlesner
@@ -233,7 +229,7 @@ video tutorials.
  - Brandon Schaefer
  - Sebastian Schuberth
  - Scr3amer
- - Jan Schürkamp
+ - Jan Schuerkamp
  - Christian Sdunek
  - Matt Sealey
  - Steve Sexton

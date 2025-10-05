@@ -35,6 +35,8 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -67,6 +69,7 @@ events:
         - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
         - "C:\\flutter\\bin"
         - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
   -
     kind: "message-v1"
     backtrace:
@@ -83,7 +86,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.18+a338add32 for .NET Framework
-      Build started 10/5/2025 8:40:17 AM.
+      Build started 10/5/2025 8:32:38 PM.
       
       Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\4.1.0\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -112,7 +115,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:02.00
+      Time Elapsed 00:00:01.05
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -145,6 +148,8 @@ events:
       - "link"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -171,11 +176,14 @@ events:
       - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/"
       - "C:/flutter/bin/"
       - "C:/Users/ACER/AppData/Roaming/npm/"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -208,6 +216,7 @@ events:
         - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
         - "C:\\flutter\\bin"
         - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -231,6 +240,8 @@ events:
       - "lld-link"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -257,10 +268,17 @@ events:
       - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/"
       - "C:/flutter/bin/"
       - "C:/Users/ACER/AppData/Roaming/npm/"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/flutter/bin/cache/dart-sdk/bin/lld-link.com"
+      - "C:/flutter/bin/cache/dart-sdk/bin/lld-link.exe"
+      - "C:/flutter/bin/cache/dart-sdk/bin/lld-link"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/lld-link.com"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/lld-link.exe"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/lld-link"
       - "C:/Windows/System32/lld-link.com"
       - "C:/Windows/System32/lld-link.exe"
       - "C:/Windows/System32/lld-link"
@@ -339,9 +357,14 @@ events:
       - "C:/Users/ACER/AppData/Roaming/npm/lld-link.com"
       - "C:/Users/ACER/AppData/Roaming/npm/lld-link.exe"
       - "C:/Users/ACER/AppData/Roaming/npm/lld-link"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
     found: false
     search_context:
       ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -374,6 +397,7 @@ events:
         - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
         - "C:\\flutter\\bin"
         - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -395,6 +419,8 @@ events:
       - "link"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -421,11 +447,14 @@ events:
       - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/"
       - "C:/flutter/bin/"
       - "C:/Users/ACER/AppData/Roaming/npm/"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -458,6 +487,7 @@ events:
         - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
         - "C:\\flutter\\bin"
         - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -479,6 +509,8 @@ events:
       - "mt"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -505,10 +537,17 @@ events:
       - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/"
       - "C:/flutter/bin/"
       - "C:/Users/ACER/AppData/Roaming/npm/"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
+      - "C:/flutter/bin/cache/dart-sdk/bin/mt.com"
+      - "C:/flutter/bin/cache/dart-sdk/bin/mt.exe"
+      - "C:/flutter/bin/cache/dart-sdk/bin/mt"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/mt.com"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/mt.exe"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/mt"
       - "C:/Windows/System32/mt.com"
       - "C:/Windows/System32/mt.exe"
       - "C:/Windows/System32/mt"
@@ -587,9 +626,14 @@ events:
       - "C:/Users/ACER/AppData/Roaming/npm/mt.com"
       - "C:/Users/ACER/AppData/Roaming/npm/mt.exe"
       - "C:/Users/ACER/AppData/Roaming/npm/mt"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.com"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.exe"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt"
     found: false
     search_context:
       ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -622,6 +666,7 @@ events:
         - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
         - "C:\\flutter\\bin"
         - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -643,6 +688,8 @@ events:
       - "lib"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -669,11 +716,14 @@ events:
       - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/"
       - "C:/flutter/bin/"
       - "C:/Users/ACER/AppData/Roaming/npm/"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -706,6 +756,7 @@ events:
         - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
         - "C:\\flutter\\bin"
         - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -733,6 +784,8 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -765,6 +818,7 @@ events:
         - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
         - "C:\\flutter\\bin"
         - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
   -
     kind: "message-v1"
     backtrace:
@@ -781,7 +835,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.18+a338add32 for .NET Framework
-      Build started 10/5/2025 8:40:20 AM.
+      Build started 10/5/2025 8:32:40 PM.
       
       Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\4.1.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -810,7 +864,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:02.27
+      Time Elapsed 00:00:01.07
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -843,6 +897,8 @@ events:
       - "lld-link"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -869,10 +925,17 @@ events:
       - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/"
       - "C:/flutter/bin/"
       - "C:/Users/ACER/AppData/Roaming/npm/"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/flutter/bin/cache/dart-sdk/bin/lld-link.com"
+      - "C:/flutter/bin/cache/dart-sdk/bin/lld-link.exe"
+      - "C:/flutter/bin/cache/dart-sdk/bin/lld-link"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/lld-link.com"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/lld-link.exe"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/lld-link"
       - "C:/Windows/System32/lld-link.com"
       - "C:/Windows/System32/lld-link.exe"
       - "C:/Windows/System32/lld-link"
@@ -951,9 +1014,14 @@ events:
       - "C:/Users/ACER/AppData/Roaming/npm/lld-link.com"
       - "C:/Users/ACER/AppData/Roaming/npm/lld-link.exe"
       - "C:/Users/ACER/AppData/Roaming/npm/lld-link"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
     found: false
     search_context:
       ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -986,6 +1054,7 @@ events:
         - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
         - "C:\\flutter\\bin"
         - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -1009,6 +1078,8 @@ events:
     names:
       - "rc"
     candidate_directories:
+      - "C:/flutter/bin/cache/dart-sdk/bin/"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1035,6 +1106,7 @@ events:
       - "C:/Users/ACER/AppData/Local/Microsoft/WinGet/Packages/ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe/bin/"
       - "C:/flutter/bin/"
       - "C:/Users/ACER/AppData/Roaming/npm/"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -1048,6 +1120,12 @@ events:
       - "C:/Program Files (x86)/CHATBOT_IMGUI/sbin/"
       - "C:/Program Files (x86)/CHATBOT_IMGUI/"
     searched_directories:
+      - "C:/flutter/bin/cache/dart-sdk/bin/rc.com"
+      - "C:/flutter/bin/cache/dart-sdk/bin/rc.exe"
+      - "C:/flutter/bin/cache/dart-sdk/bin/rc"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/rc.com"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/rc.exe"
+      - "C:/Program Files/AdoptOpenJDK/jdk-23.0.2/bin/rc"
       - "C:/Windows/System32/rc.com"
       - "C:/Windows/System32/rc.exe"
       - "C:/Windows/System32/rc"
@@ -1126,6 +1204,9 @@ events:
       - "C:/Users/ACER/AppData/Roaming/npm/rc.com"
       - "C:/Users/ACER/AppData/Roaming/npm/rc.exe"
       - "C:/Users/ACER/AppData/Roaming/npm/rc"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.com"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.exe"
+      - "C:/Users/ACER/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc"
       - "C:/Program Files/bin/rc.com"
       - "C:/Program Files/bin/rc.exe"
       - "C:/Program Files/bin/rc"
@@ -1165,6 +1246,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "C:\\flutter\\bin\\cache\\dart-sdk\\bin\\"
+        - "C:\\Program Files\\AdoptOpenJDK\\jdk-23.0.2\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -1197,6 +1280,7 @@ events:
         - "C:\\Users\\ACER\\AppData\\Local\\Microsoft\\WinGet\\Packages\\ezwinports.make_Microsoft.Winget.Source_8wekyb3d8bbwe\\bin"
         - "C:\\flutter\\bin"
         - "C:\\Users\\ACER\\AppData\\Roaming\\npm"
+        - "c:\\Users\\ACER\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/CHATBOT_IMGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -1212,8 +1296,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-z43ewp"
-      binary: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-z43ewp"
+      source: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-n83cn6"
+      binary: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-n83cn6"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1222,40 +1306,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-z43ewp'
+        Change Dir: 'C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-n83cn6'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1541d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e586c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.18+a338add32 for .NET Framework
-        Build started 10/5/2025 8:40:24 AM.
+        Build started 10/5/2025 8:32:41 PM.
         
-        Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z43ewp\\cmTC_1541d.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n83cn6\\cmTC_e586c.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_1541d.dir\\Debug\\".
+          Creating directory "cmTC_e586c.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z43ewp\\Debug\\".
-          Creating directory "cmTC_1541d.dir\\Debug\\cmTC_1541d.tlog\\".
+          Creating directory "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n83cn6\\Debug\\".
+          Creating directory "cmTC_e586c.dir\\Debug\\cmTC_e586c.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_1541d.dir\\Debug\\cmTC_1541d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_1541d.dir\\Debug\\cmTC_1541d.tlog\\unsuccessfulbuild".
+          Creating "cmTC_e586c.dir\\Debug\\cmTC_e586c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_e586c.dir\\Debug\\cmTC_e586c.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_1541d.dir\\Debug\\\\" /Fd"cmTC_1541d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_e586c.dir\\Debug\\\\" /Fd"cmTC_e586c.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35214 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_1541d.dir\\Debug\\\\" /Fd"cmTC_1541d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_e586c.dir\\Debug\\\\" /Fd"cmTC_e586c.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z43ewp\\Debug\\cmTC_1541d.exe" /INCREMENTAL /ILK:"cmTC_1541d.dir\\Debug\\cmTC_1541d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-z43ewp/Debug/cmTC_1541d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-z43ewp/Debug/cmTC_1541d.lib" /MACHINE:X64  /machine:x64 cmTC_1541d.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_1541d.vcxproj -> C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z43ewp\\Debug\\cmTC_1541d.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n83cn6\\Debug\\cmTC_e586c.exe" /INCREMENTAL /ILK:"cmTC_e586c.dir\\Debug\\cmTC_e586c.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-n83cn6/Debug/cmTC_e586c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-n83cn6/Debug/cmTC_e586c.lib" /MACHINE:X64  /machine:x64 cmTC_e586c.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_e586c.vcxproj -> C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n83cn6\\Debug\\cmTC_e586c.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_1541d.dir\\Debug\\cmTC_1541d.tlog\\unsuccessfulbuild".
-          Touching "cmTC_1541d.dir\\Debug\\cmTC_1541d.tlog\\cmTC_1541d.lastbuildstate".
-        Done Building Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z43ewp\\cmTC_1541d.vcxproj" (default targets).
+          Deleting file "cmTC_e586c.dir\\Debug\\cmTC_e586c.tlog\\unsuccessfulbuild".
+          Touching "cmTC_e586c.dir\\Debug\\cmTC_e586c.tlog\\cmTC_e586c.lastbuildstate".
+        Done Building Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n83cn6\\cmTC_e586c.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.82
+        Time Elapsed 00:00:01.00
         
       exitCode: 0
   -
@@ -1295,8 +1379,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-j9zkcc"
-      binary: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-j9zkcc"
+      source: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-qkcu39"
+      binary: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-qkcu39"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1306,40 +1390,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-j9zkcc'
+        Change Dir: 'C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-qkcu39'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_55e88.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ba970.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.18+a338add32 for .NET Framework
-        Build started 10/5/2025 8:40:27 AM.
+        Build started 10/5/2025 8:32:43 PM.
         
-        Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j9zkcc\\cmTC_55e88.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qkcu39\\cmTC_ba970.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_55e88.dir\\Debug\\".
+          Creating directory "cmTC_ba970.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j9zkcc\\Debug\\".
-          Creating directory "cmTC_55e88.dir\\Debug\\cmTC_55e88.tlog\\".
+          Creating directory "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qkcu39\\Debug\\".
+          Creating directory "cmTC_ba970.dir\\Debug\\cmTC_ba970.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_55e88.dir\\Debug\\cmTC_55e88.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_55e88.dir\\Debug\\cmTC_55e88.tlog\\unsuccessfulbuild".
+          Creating "cmTC_ba970.dir\\Debug\\cmTC_ba970.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_ba970.dir\\Debug\\cmTC_ba970.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_55e88.dir\\Debug\\\\" /Fd"cmTC_55e88.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_ba970.dir\\Debug\\\\" /Fd"cmTC_ba970.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35214 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_55e88.dir\\Debug\\\\" /Fd"cmTC_55e88.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_ba970.dir\\Debug\\\\" /Fd"cmTC_ba970.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j9zkcc\\Debug\\cmTC_55e88.exe" /INCREMENTAL /ILK:"cmTC_55e88.dir\\Debug\\cmTC_55e88.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-j9zkcc/Debug/cmTC_55e88.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-j9zkcc/Debug/cmTC_55e88.lib" /MACHINE:X64  /machine:x64 cmTC_55e88.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_55e88.vcxproj -> C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j9zkcc\\Debug\\cmTC_55e88.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qkcu39\\Debug\\cmTC_ba970.exe" /INCREMENTAL /ILK:"cmTC_ba970.dir\\Debug\\cmTC_ba970.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-qkcu39/Debug/cmTC_ba970.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-qkcu39/Debug/cmTC_ba970.lib" /MACHINE:X64  /machine:x64 cmTC_ba970.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_ba970.vcxproj -> C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qkcu39\\Debug\\cmTC_ba970.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_55e88.dir\\Debug\\cmTC_55e88.tlog\\unsuccessfulbuild".
-          Touching "cmTC_55e88.dir\\Debug\\cmTC_55e88.tlog\\cmTC_55e88.lastbuildstate".
-        Done Building Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j9zkcc\\cmTC_55e88.vcxproj" (default targets).
+          Deleting file "cmTC_ba970.dir\\Debug\\cmTC_ba970.tlog\\unsuccessfulbuild".
+          Touching "cmTC_ba970.dir\\Debug\\cmTC_ba970.tlog\\cmTC_ba970.lastbuildstate".
+        Done Building Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qkcu39\\cmTC_ba970.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.75
+        Time Elapsed 00:00:01.02
         
       exitCode: 0
   -
@@ -1381,8 +1465,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-bu9ucc"
-      binary: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-bu9ucc"
+      source: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-5vv02h"
+      binary: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-5vv02h"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1392,40 +1476,40 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-bu9ucc'
+        Change Dir: 'C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-5vv02h'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_747fb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2ebff.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.18+a338add32 for .NET Framework
-        Build started 10/5/2025 8:40:30 AM.
+        Build started 10/5/2025 8:32:44 PM.
         
-        Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu9ucc\\cmTC_747fb.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vv02h\\cmTC_2ebff.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_747fb.dir\\Debug\\".
+          Creating directory "cmTC_2ebff.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu9ucc\\Debug\\".
-          Creating directory "cmTC_747fb.dir\\Debug\\cmTC_747fb.tlog\\".
+          Creating directory "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vv02h\\Debug\\".
+          Creating directory "cmTC_2ebff.dir\\Debug\\cmTC_2ebff.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_747fb.dir\\Debug\\cmTC_747fb.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_747fb.dir\\Debug\\cmTC_747fb.tlog\\unsuccessfulbuild".
+          Creating "cmTC_2ebff.dir\\Debug\\cmTC_2ebff.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_2ebff.dir\\Debug\\cmTC_2ebff.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_747fb.dir\\Debug\\\\" /Fd"cmTC_747fb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu9ucc\\src.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_2ebff.dir\\Debug\\\\" /Fd"cmTC_2ebff.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vv02h\\src.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35214 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_747fb.dir\\Debug\\\\" /Fd"cmTC_747fb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu9ucc\\src.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_2ebff.dir\\Debug\\\\" /Fd"cmTC_2ebff.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vv02h\\src.c"
           src.c
-        C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu9ucc\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu9ucc\\cmTC_747fb.vcxproj]
-        Done Building Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu9ucc\\cmTC_747fb.vcxproj" (default targets) -- FAILED.
+        C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vv02h\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vv02h\\cmTC_2ebff.vcxproj]
+        Done Building Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vv02h\\cmTC_2ebff.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu9ucc\\cmTC_747fb.vcxproj" (default target) (1) ->
+        "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vv02h\\cmTC_2ebff.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu9ucc\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu9ucc\\cmTC_747fb.vcxproj]
+          C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vv02h\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vv02h\\cmTC_2ebff.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:01.10
+        Time Elapsed 00:00:00.58
         
       exitCode: 1
   -
@@ -1438,8 +1522,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-92z4mg"
-      binary: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-92z4mg"
+      source: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-y6pqe1"
+      binary: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-y6pqe1"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1449,42 +1533,42 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-92z4mg'
+        Change Dir: 'C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-y6pqe1'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e1b15.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6aa7a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.18+a338add32 for .NET Framework
-        Build started 10/5/2025 8:40:31 AM.
+        Build started 10/5/2025 8:32:46 PM.
         
-        Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-92z4mg\\cmTC_e1b15.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y6pqe1\\cmTC_6aa7a.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_e1b15.dir\\Debug\\".
+          Creating directory "cmTC_6aa7a.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-92z4mg\\Debug\\".
-          Creating directory "cmTC_e1b15.dir\\Debug\\cmTC_e1b15.tlog\\".
+          Creating directory "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y6pqe1\\Debug\\".
+          Creating directory "cmTC_6aa7a.dir\\Debug\\cmTC_6aa7a.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_e1b15.dir\\Debug\\cmTC_e1b15.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_e1b15.dir\\Debug\\cmTC_e1b15.tlog\\unsuccessfulbuild".
+          Creating "cmTC_6aa7a.dir\\Debug\\cmTC_6aa7a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_6aa7a.dir\\Debug\\cmTC_6aa7a.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_e1b15.dir\\Debug\\\\" /Fd"cmTC_e1b15.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-92z4mg\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_6aa7a.dir\\Debug\\\\" /Fd"cmTC_6aa7a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y6pqe1\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35214 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_e1b15.dir\\Debug\\\\" /Fd"cmTC_e1b15.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-92z4mg\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_6aa7a.dir\\Debug\\\\" /Fd"cmTC_6aa7a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y6pqe1\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-92z4mg\\Debug\\cmTC_e1b15.exe" /INCREMENTAL /ILK:"cmTC_e1b15.dir\\Debug\\cmTC_e1b15.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-92z4mg/Debug/cmTC_e1b15.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-92z4mg/Debug/cmTC_e1b15.lib" /MACHINE:X64  /machine:x64 cmTC_e1b15.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-92z4mg\\cmTC_e1b15.vcxproj]
-        Done Building Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-92z4mg\\cmTC_e1b15.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y6pqe1\\Debug\\cmTC_6aa7a.exe" /INCREMENTAL /ILK:"cmTC_6aa7a.dir\\Debug\\cmTC_6aa7a.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-y6pqe1/Debug/cmTC_6aa7a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-y6pqe1/Debug/cmTC_6aa7a.lib" /MACHINE:X64  /machine:x64 cmTC_6aa7a.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y6pqe1\\cmTC_6aa7a.vcxproj]
+        Done Building Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y6pqe1\\cmTC_6aa7a.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-92z4mg\\cmTC_e1b15.vcxproj" (default target) (1) ->
+        "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y6pqe1\\cmTC_6aa7a.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-92z4mg\\cmTC_e1b15.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y6pqe1\\cmTC_6aa7a.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:01.62
+        Time Elapsed 00:00:00.83
         
       exitCode: 1
   -
@@ -1497,8 +1581,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-9t15rn"
-      binary: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-9t15rn"
+      source: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-bs85yr"
+      binary: "C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-bs85yr"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1508,42 +1592,42 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-9t15rn'
+        Change Dir: 'C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-bs85yr'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0afd3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0a856.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.18+a338add32 for .NET Framework
-        Build started 10/5/2025 8:40:34 AM.
+        Build started 10/5/2025 8:32:47 PM.
         
-        Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9t15rn\\cmTC_0afd3.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bs85yr\\cmTC_0a856.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_0afd3.dir\\Debug\\".
+          Creating directory "cmTC_0a856.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9t15rn\\Debug\\".
-          Creating directory "cmTC_0afd3.dir\\Debug\\cmTC_0afd3.tlog\\".
+          Creating directory "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bs85yr\\Debug\\".
+          Creating directory "cmTC_0a856.dir\\Debug\\cmTC_0a856.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_0afd3.dir\\Debug\\cmTC_0afd3.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_0afd3.dir\\Debug\\cmTC_0afd3.tlog\\unsuccessfulbuild".
+          Creating "cmTC_0a856.dir\\Debug\\cmTC_0a856.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_0a856.dir\\Debug\\cmTC_0a856.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_0afd3.dir\\Debug\\\\" /Fd"cmTC_0afd3.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9t15rn\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_0a856.dir\\Debug\\\\" /Fd"cmTC_0a856.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bs85yr\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35214 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_0afd3.dir\\Debug\\\\" /Fd"cmTC_0afd3.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9t15rn\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_0a856.dir\\Debug\\\\" /Fd"cmTC_0a856.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bs85yr\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9t15rn\\Debug\\cmTC_0afd3.exe" /INCREMENTAL /ILK:"cmTC_0afd3.dir\\Debug\\cmTC_0afd3.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-9t15rn/Debug/cmTC_0afd3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-9t15rn/Debug/cmTC_0afd3.lib" /MACHINE:X64  /machine:x64 cmTC_0afd3.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9t15rn\\cmTC_0afd3.vcxproj]
-        Done Building Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9t15rn\\cmTC_0afd3.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bs85yr\\Debug\\cmTC_0a856.exe" /INCREMENTAL /ILK:"cmTC_0a856.dir\\Debug\\cmTC_0a856.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-bs85yr/Debug/cmTC_0a856.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/build/CMakeFiles/CMakeScratch/TryCompile-bs85yr/Debug/cmTC_0a856.lib" /MACHINE:X64  /machine:x64 cmTC_0a856.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bs85yr\\cmTC_0a856.vcxproj]
+        Done Building Project "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bs85yr\\cmTC_0a856.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9t15rn\\cmTC_0afd3.vcxproj" (default target) (1) ->
+        "C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bs85yr\\cmTC_0a856.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9t15rn\\cmTC_0afd3.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\ACER\\OneDrive\\Desktop\\Chatbot-imgui\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bs85yr\\cmTC_0a856.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:01.45
+        Time Elapsed 00:00:00.88
         
       exitCode: 1
 ...

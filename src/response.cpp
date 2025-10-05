@@ -88,7 +88,7 @@ void response :: makepair(const std::vector<response :: QA>& training_set){
 
 
 void response :: training(){
-    std::vector<QA> training_set = load_training_data("data/trainingdata.txt");
+    std::vector<QA> training_set = load_training_data("C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/data/trainingdata.txt");
 
     // Build quick response map for exact matches
     for (auto &qa : training_set) {
@@ -307,7 +307,8 @@ void response :: prediction( ){
 
     float best_sim = -1.0f;
     std::string best_response = "I didn't understand it.";
-    std::vector<response::QA> training_data = load_training_data("data/trainingdata.txt");
+    std::vector<response::QA> training_data = load_training_data("C:/Users/ACER/OneDrive/Desktop/Chatbot-imgui/data/trainingdata.txt");
+
 
     for (auto &qa : training_data) {
         std::vector<std::string> train_words = preprocessing(qa.input);

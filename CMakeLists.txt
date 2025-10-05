@@ -14,36 +14,39 @@ set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
 add_subdirectory(libs/glfw)
 
 # Add GLAD
-add_library(glad STATIC libs/glad/src/glad.c)
-target_include_directories(glad PUBLIC libs/glad/include)
+add_library(glad STATIC "libs/glad/src/glad.c")
+target_include_directories(glad PUBLIC "libs/glad/include")
 
 # Add ImGui source files
 set(IMGUI_SRC
-    libs/imgui/imgui.cpp
-    libs/imgui/imgui_draw.cpp
-    libs/imgui/imgui_tables.cpp
-    libs/imgui/imgui_widgets.cpp
-    libs/imgui/backends/imgui_impl_glfw.cpp
-    libs/imgui/backends/imgui_impl_opengl3.cpp
+    "libs/imgui/imgui.cpp"
+    "libs/imgui/imgui_draw.cpp"
+    "libs/imgui/imgui_tables.cpp"
+    "libs/imgui/imgui_widgets.cpp"
+    "libs/imgui/backends/imgui_impl_glfw.cpp"
+    "libs/imgui/backends/imgui_impl_opengl3.cpp"
 )
 
-# Use imgui_lib instead of imgui to avoid conflicts
+# Create ImGui static library
 add_library(imgui_lib STATIC ${IMGUI_SRC})
 target_include_directories(imgui_lib PUBLIC
-    libs/imgui
-    libs/imgui/backends
-    libs/glfw/include
+    "libs/imgui"
+    "libs/imgui/backends"
+    "libs/glfw/include"
 )
 
 # Main executable
-add_executable(CHATBOT_IMGUI src/main.cpp src/response.cpp)
+add_executable(CHATBOT_IMGUI
+    "src/main.cpp"
+    "src/response.cpp"
+)
 
 # Include directories for the main target
 target_include_directories(CHATBOT_IMGUI PRIVATE
-    libs/glad/include
-    libs/imgui
-    libs/imgui/backends
-    libs/glfw/include
+    "libs/glad/include"
+    "libs/imgui"
+    "libs/imgui/backends"
+    "libs/glfw/include"
 )
 
 # Link all libraries to the main executable
