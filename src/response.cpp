@@ -38,19 +38,22 @@ std::vector<response:: QA> response::load_training_data(const std::string &train
     return training_set;
 }
 
-std::vector<std::string> response :: tokenizer (const std::string &sentence){
+std::vector<std::string> response::tokenizer(const std::string &sentence) {
     std::istringstream iss(sentence);
     std::string temp;
     std::vector<std::string> tokens;
 
     while (iss >> temp) {
-        for (char& c : temp) { c = std::tolower(c); } // convert to lowercase
-        if (!temp.empty()) {
-            tokens.push_back(temp);
-        }
+        // remove punctuation
+        temp.erase(std::remove_if(temp.begin(), temp.end(),
+                                  [](unsigned char c){ return std::ispunct(c); }),
+                   temp.end());
+        for (char &c : temp) c = std::tolower(c);
+        if (!temp.empty()) tokens.push_back(temp);
     }
     return tokens;
 }
+
 
 
 std::vector<std::string> response :: preprocessing (const std::string &sentence)
@@ -86,6 +89,15 @@ void response :: makepair(const std::vector<response :: QA>& training_set){
 
 void response :: training(){
     std::vector<QA> training_set = load_training_data("data/trainingdata.txt");
+
+    // Build quick response map for exact matches
+    for (auto &qa : training_set) {
+        std::vector<std::string> processed = preprocessing(qa.input);
+        if (!processed.empty()) {
+            response[processed.back()] = qa.output; // map last word to output
+        }
+    }
+
     
 
     // Step 1: Build vocabulary from all training sentences
@@ -95,6 +107,7 @@ void response :: training(){
             vocabulary.insert(word);
         }
     }
+
 
     // Step 2: Convert vocabulary (set) to a list for indexing
     vocablist.assign(vocabulary.begin(), vocabulary.end());
@@ -117,6 +130,10 @@ void response :: training(){
         }
     }
     }
+
+    
+    
+
     makepair(training_set);
 
 }
@@ -262,64 +279,64 @@ void response :: prediction( ){
     for(int j = 0 ; j <Word2vec.size() ; j++){
         wordsvec[vocablist[j]] = Word2vec[j];
     }   
-}
-
-std::string response :: get_response(const std::string& user_input){
-    
+}std::string response::get_response(const std::string &user_input) {
     std::vector<std::string> words = preprocessing(user_input);
+    if (words.empty()) return "I didn't understand it.";
+
+    // Check exact match shortcut
+    for (auto &w : words) {
+        if (response.find(w) != response.end()) {
+            return response[w];
+        }
+    }
+
+    // Otherwise, use embeddings + cosine similarity
     int count = 0;
-
-    std::vector<float> input_vec(embedding_size , 0.0);
-    for(auto& w : words){
-        if(wordsvec.find(w) != wordsvec.end()){
-            for(int i = 0 ; i<embedding_size ; i++){
+    std::vector<float> input_vec(embedding_size, 0.0f);
+    for (auto &w : words) {
+        if (wordsvec.find(w) != wordsvec.end()) {
+            for (int i = 0; i < embedding_size; i++) {
                 input_vec[i] += wordsvec[w][i];
-                
             }
-            count ++;
+            count++;
         }
     }
-    if(count > 0) {
-        for(int i = 0 ; i<embedding_size ; i++){
-            input_vec[i] /= count;
-        }
+    if (count > 0) {
+        for (int i = 0; i < embedding_size; i++) input_vec[i] /= count;
     }
-    
-    float best_sim = -1.0 ;
-    std::string response = "I didnt understand it ";
-    std::vector<response :: QA> training_data = load_training_data("data/trainingdata.txt");
-    for(auto& qa : training_data ){
-        std::vector<std::string> train_word = preprocessing(qa.input);
-        int n = 0;
-        std::vector<float> train_input (embedding_size , 0.0);
-        for(auto& tw : train_word){
-            if(wordsvec.find(tw) != wordsvec.end()){
-                for(int i =0 ; i<embedding_size ; i++){
-                    train_input[i] += wordsvec[tw][i];
 
-                }
+    float best_sim = -1.0f;
+    std::string best_response = "I didn't understand it.";
+    std::vector<response::QA> training_data = load_training_data("data/trainingdata.txt");
+
+    for (auto &qa : training_data) {
+        std::vector<std::string> train_words = preprocessing(qa.input);
+        int n = 0;
+        std::vector<float> train_vec(embedding_size, 0.0f);
+        for (auto &tw : train_words) {
+            if (wordsvec.find(tw) != wordsvec.end()) {
+                for (int i = 0; i < embedding_size; i++) train_vec[i] += wordsvec[tw][i];
                 n++;
             }
         }
-        if(n>0){
-            for(int i = 0 ; i<embedding_size ; i++){
-                train_input[i] /= n;
-            }
-        }
-        float dot = 0 , a = 0 , b= 0;
-        for(int i = 0 ; i < embedding_size ; i++){
-            dot += train_input[i] * input_vec[i];
+        if (n > 0) for (int i = 0; i < embedding_size; i++) train_vec[i] /= n;
+
+        float dot = 0.0f, a = 0.0f, b = 0.0f;
+        for (int i = 0; i < embedding_size; i++) {
+            dot += train_vec[i] * input_vec[i];
             a += input_vec[i] * input_vec[i];
-            b += train_input[i] * train_input[i];
+            b += train_vec[i] * train_vec[i];
         }
-        float sim = dot/(std::sqrt(a) * std::sqrt(b) + 1e-10f);
 
-        if(sim > best_sim ){
-            best_sim = sim ;
-            response = qa.output;
+        float sim = dot / (std::sqrt(a) * std::sqrt(b) + 1e-10f);
+        if (sim > best_sim) {
+            best_sim = sim;
+            best_response = qa.output;
         }
-        
     }
-    return response;
 
+    return best_response;
 }
+
+
+

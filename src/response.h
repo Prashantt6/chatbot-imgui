@@ -44,7 +44,7 @@ class response {
         std::vector<float>prob;
 
         std::vector<std::pair<std::string , std::string >> training_pairs;
-
+        std::unordered_map<std::string , std::string>response;
 
         std::unordered_map<std::string, std::vector<float>> wordsvec;
         std::unordered_map<std::string , std::vector<float>> one_hot;
