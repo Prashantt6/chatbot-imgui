@@ -58,10 +58,9 @@ class response {
         
         void backward_pass(std::vector<float>& h ,std::vector<std::vector<float>>& W1, std::vector<std::vector<float>>& W2 , std::string& target , std::string& context );
         void prediction();
-        void display(std::string& word);
+        std::string get_response(const std::string& user_input);
         
         
-        
-        void word2vec_call();
+    
 
 };

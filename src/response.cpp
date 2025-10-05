@@ -260,4 +260,62 @@ void response :: prediction( ){
     }   
 }
 
+std::string response :: get_response(const std::string& user_input){
+    prediction();
+    std::vector<std::string> words = preprocessing(user_input);
+    int count = 0;
 
+    std::vector<float> input_vec(embedding_size , 0.0);
+    for(auto& w : words){
+        if(wordsvec.find(w) != wordsvec.end()){
+            for(int i = 0 ; i<embedding_size ; i++){
+                input_vec[i] += wordsvec[w][i];
+                
+            }
+            count ++;
+        }
+    }
+    if(count > 0) {
+        for(int i = 0 ; i<embedding_size ; i++){
+            input_vec[i] /= count;
+        }
+    }
+    
+    float best_sim = -1 ;
+    std::string response = "I didnt understand it ";
+    std::vector<response :: QA> training_data = load_training_data("trainingdata.txt");
+    for(auto& qa : training_data ){
+        std::vector<std::string> train_word = preprocessing(qa.input);
+        int n = 0;
+        std::vector<float> train_input (embedding_size , 0.0);
+        for(auto& tw : train_word){
+            if(wordsvec.find(tw) != wordsvec.end()){
+                for(int i =0 ; i<embedding_size ; i++){
+                    train_input[i] += wordsvec[tw][i];
+
+                }
+                n++;
+            }
+        }
+        if(n>0){
+            for(int i = 0 ; i<embedding_size ; i++){
+                train_input[i] /= n;
+            }
+        }
+        float dot = 0 , a = 0 , b= 0;
+        for(int i = 0 ; i < embedding_size ; i++){
+            dot += train_input[i] * input_vec[i];
+            a += input_vec[i] * input_vec[i];
+            b += train_input[i] * train_input[i];
+        }
+        float sim = dot/(std::sqrt(a) * std::sqrt(b));
+
+        if(sim > best_sim ){
+            best_sim = sim ;
+            response = qa.output;
+        }
+        
+    }
+    return response;
+
+}
